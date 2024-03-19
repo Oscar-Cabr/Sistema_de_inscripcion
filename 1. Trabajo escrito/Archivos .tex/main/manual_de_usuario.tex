@@ -1,0 +1,135 @@
+\documentclass[a4paper,12pt]{article}
+
+\include{config}
+
+\begin{document}
+
+\section{Introducción}
+
+Manual para el usuario, se presenta a continuacion las diferentes funciones del sistema de inscripcion, funcionamiento general, procedimiento y guía paso a paso para utilizar los diferentes enfoques abarcados en este programa.
+
+
+\section{Requisitos del sistema e instalación}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|@{}l|l|l@{}|}
+\toprule
+ & \textbf{Mínimos} & \textbf{Recomendados} \\ \hline
+JDK & JDK 16 & JDK 16 o superior \\ \hline 
+IDE & Terminal con JDK & Cualquier IDE\\ \hline 
+Memoria RAM & 4GB & 8GB\\ \hline 
+Espacio en disco & 4GB (sin proyectos) & 10GB  (incluye espacio para proyectos)\\ \hline
+Sistema operativo & Windows 10 64-bit, macOS, Linux & Windows 10/11 64-bit, macOS, Linux \\
+\bottomrule \hline
+\end{tabular}
+\caption{Requisitos mínimos y recomendados para la ejecución con JDK 16.}
+\label{tab:requisitos_desarrollo_java}
+\end{table}
+
+
+\section{Funcionamiento general del programa}
+
+\subsection{Docentes}
+
+\subsubsection{Acceso al sistema}
+
+\paragraph{Iniciar sesión}
+Para ingresar al sistema, necesitas proporcionar tu RFC (Registro Federal de Contribuyentes) y tu contraseña. Utiliza la función \textit{\textbf{Ingresar}} en el menú principal e introduce tu RFC y contraseña cuando se te solicite.
+
+\paragraph{Registrar una nueva cuenta}
+Si eres un nuevo docente en el sistema, necesitarás registrar una cuenta. Selecciona la opción \textbf{\textit{Registrar nueva cuenta}} en el menú y sigue las instrucciones. Introduce tu nombre y RFC (asegúrate de que tenga exactamente 13 caracteres), y el sistema generará automáticamente una contraseña para ti.
+
+\paragraph{Recuperar contraseña}
+En caso de que olvides tu contraseña, puedes recuperarla proporcionando tu RFC. Selecciona la opción \textbf{\textit{Olvidé mi contraseña}} e ingresa tu RFC cuando se te solicite. Si el RFC está registrado, el sistema te mostrará tu contraseña.
+
+\subsubsection{Gestión de grupos}
+
+\paragraph{Visualizar grupos}
+Una vez que hayas iniciado sesión, podrás ver y gestionar los grupos que impartes. Podrás ver una lista de tus grupos, así como los alumnos inscritos en cada uno.
+
+\paragraph{Solicitar impartir un grupo}
+Si quieres impartir un nuevo grupo en una asignatura que ya impartes o de una distinta, puedes solicitarlo mediante la opción \textit{\textbf{Solicitar dar grupo de una asignatura}}, una vez que mandes la solicitud, ésta deberá ser aprovada por el sistema.
+
+\subsubsection{Cerrar sesión}
+Cuando hayas terminado de usar el sistema, asegúrate de cerrar sesión para proteger tu privacidad y seguridad. Selecciona la opción \textit{\textbf{Cerrar sesión}} en el menú principal para salir por tu cuenta.
+
+\subsection{Instrucciones para estudiantes}
+
+\subsubsection{Acceso al sistema}
+
+\paragraph{Iniciar sesión}
+Para acceder al sistema, necesitas proporcionar tu número de cuenta y tu contraseña. Selecciona la opción ''Alumno'' en el menú principal e introduce tu número de cuenta y contraseña cuando se te solicite.
+
+\paragraph{Registrar una nueva cuenta}
+Si eres un nuevo estudiante en el sistema, necesitarás registrar una cuenta. Selecciona la opción \textit{\textbf{Registrar nueva cuenta}} en el menú y sigue las instrucciones. Introduce tu nombre y número de cuenta, y el sistema generará automáticamente una contraseña para ti.
+
+\paragraph{Recuperar contraseña}
+En caso de que olvides tu contraseña, puedes recuperarla proporcionando tu número de cuenta. Selecciona la opción ''Olvidé mi contraseña'' e ingresa tu número de cuenta cuando se te solicite. Si el número de cuenta está registrado, el sistema te mostrará tu contraseña.
+
+\subsubsection{Visualizar grupos disponibles}
+Una vez que hayas iniciado sesión, podrás ver los grupos disponibles e inscribirte a ellos, ten en cuenta que solo puedes inscribirte a un grupo de cada asignatura. Podrás ver una lista de grupos y seleccionar aquellos en los que deseas inscribirte.
+
+\subsubsection{Cerrar sesión}
+Cuando hayas terminado de usar el sistema, asegúrate de cerrar sesión para proteger tu privacidad y seguridad. Selecciona la opción ''Cerrar sesión'' en el menú principal para salir de tu cuenta.
+
+\subsection{Instrucciones para el administrador}
+
+\subsubsection{Acceso al sistema administrativo}
+
+\paragraph{Iniciar sesión}
+Para acceder al sistema administrativo, necesitarás ingresar la contraseña de acceso ''contra''. Selecciona la opción \textit{\textbf{Administrador}} en el menú principal. Ingresar como administrador ofrece el mayor control en cuanto a la información de las asignaturas, docentes y alumnos dados de alta en el sistema. Permite también dar de alta cualquiera de ellos y abrir grupos (función única).
+
+\paragraph{Registrar una nueva cuenta}
+Si eres un nuevo administrador del sistema, necesitarás registrar una cuenta. Selecciona la opción \textbf{\textit{Registrar nueva cuenta}} en el menú y sigue las instrucciones. Introduce tu nombre, correo electrónico y establece una contraseña para acceder al sistema administrativo.
+
+\subsubsection{Gestión de usuarios}
+
+\paragraph{Agregar usuario}
+Como administrador, puedes agregar nuevos usuarios al sistema. Selecciona la opción \textit{\textbf{Agregar usuario}} en el panel de administración e ingresa los detalles del nuevo usuario: nombre y número de cuenta y se generará una contraseña de acceso al sistema única.
+
+\subsubsection{Gestión de grupos y materias}
+
+\paragraph{Crear asignatura}
+Como administrador, puedes crear nuevas asignaturas en el sistema. Selecciona la opción \textit{\textbf{Crear asignatura}} en el panel de administración e ingresa los detalles de la nueva asignatura, solo es necesario el nombre y se generará una clave de asignatura única.
+
+\paragraph{Abrir grupo}
+Puedes asignar profesores a las asignaturas existentes en el sistema. Selecciona la opción \textbf{\textit{Abrir un grupo}} en el panel de administración, elige la asignatura y el profesor correspondiente mediante sus claves de identificación, clave y RFC en cada caso. Confirma la asignación y el profesor estará vinculado a un nuevo grupo de la asignatura.
+
+\subsection{Cuentas genéricas}
+
+El programa cuenta con cuentas genéricas para el administrador, aquel usuario que quiera ingresar en otro campo que no sea ´´Admin´´ (cuya contraseña de acceso es ''contra'') puede acceder también como docente o alumno para explorar las funcionalidades que el programa ofrece mediante cuentas genéricas dadas de alta previamente en la planeación del desarrollo del software. Dicha cuenta para alumno tiene como usuario (número de cuenta) ''123456789'' y como contraseña ''6''. La cuenta genérica para el docente tiene por usuario (RFC) ''ABCD123456EF7'' y por contraseña ''6''.
+
+\subsection{Elementos precargados}
+
+El programa cuenta con una pequeña base de datos con ciertos alumnos, docentes, asignaturas y grupos abiertos. Ésto no impide en ningún caso hacer uso de cualquier funcionalidad del programa. De querer quitarlos habría que hacer la modificación pertinente mediante intervención directa en el código fuente.
+
+
+\section{Medidas para asegurar el correcto funcionamiento del programa}
+
+
+\paragraph{Restricciones en los datos de entrada}
+A lo largo del programa se solicitan entradas dadas por el usuario para seguir con la ejecución, a pesar de que la gran mayoría de entradas contienen validación, para otras se debe tener especial cuidado al momento de escribirlas. El RFC dado (en el caso de ingresar como docente) considera válido cualquier cadena de exactamente trece caracteres; los nombres solicitados en cualquier parte del programa acepta cualquier cadena, sin embargo se sobreentiendo el uso de nombre completo (ambos apellidos) e iniciando por apellidos en el caso de estudiantes; el número de cuenta (en el caso de estudiantes) debe ser un \textbf{número entero} de exactamente nueve dígitos cualesquiera, el sistema ofrece validación de la longitud, pero fallará con una excepción de ingresar caracteres no numéricos; inscripción de asignaturas y similares funcionan con la \textbf{clave} de la asignatura deseada, se debe conocer de antemano, el sistema solo acepta claves de asignaturas existentes; número de grupo a inscribir (en su caso) solo acepta valores de grupos existentes y, al igual que las claves de asinaturas, si se ingresa un carácter no numérico la ejecución puede terminar antes de lo esperado mediante una excepción. Todas las decisiones tomadas llevan a una ruta anterior de no cumplirse satisfactoriamente exceptuando el cambio de grupo en el caso de alumnos, entonces se pide una entrada válida reiteradamente hasta recibirla. Es recomendable tener todos los datos que se ingresarán a mano antes de seleccionar la opción deseada.
+
+\paragraph{Requisitos del sistema}
+Verifica que tu sistema cumpla con los requisitos mínimos para ejecutar el programa, incluyendo la versión adecuada del JDK (JDK 16) y la disponibilidad de un IDE compatible.
+
+\paragraph{Configuración del entorno}
+Asegúrate de tener configurado correctamente el entorno de desarrollo, incluyendo la configuración de las variables de entorno necesarias para la ejecución del programa.
+
+\paragraph{Dependencias y bibliotecas}
+Verifica que todas las dependencias y bibliotecas necesarias estén correctamente instaladas y configuradas en tu entorno de desarrollo para evitar errores durante la ejecución del programa.
+
+\paragraph{Espacio en disco suficiente}
+Verifica que haya suficiente espacio en disco disponible para ejecutar el programa y almacenar los datos generados durante su ejecución. En caso necesario, libera espacio eliminando archivos innecesarios o trasladándolos a otro almacenamiento.
+
+\paragraph{Ingreso correcto de datos}
+Al ingresar datos al programa, asegúrate de seguir el formato y la estructura requeridos para evitar errores de entrada. Verifica la documentación del programa para conocer los formatos aceptados y las restricciones de entrada.
+
+\paragraph{Cierre correcto del programa}
+Al finalizar la ejecución del programa, asegúrate de cerrarlo correctamente para liberar los recursos utilizados y evitar posibles problemas de memoria o pérdida de datos. Guarda cualquier cambio o trabajo realizado antes de cerrar el programa.\\
+
+Estas consideraciones te ayudarán a garantizar un correcto funcionamiento del programa durante su ejecución, minimizando posibles problemas o errores que puedan surgir.
+
+\end{document}
+
